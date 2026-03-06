@@ -88,10 +88,12 @@
                     class="snap-start px-4 py-1 p-1 rounded-full bg-primary text-white font-bold text-sm transition-transform duration-150 cursor-pointer flex-shrink-0 btn-cat">
                     Sushi
                 </button>
+
                 <button data-cat="temakis"
                     class="snap-start px-4 py-1 p-1 rounded-full bg-[#ebebeb] text-dark font-bold text-sm transition-transform duration-150 cursor-pointer flex-shrink-0 btn-cat">
                     Temakis
                 </button>
+
                 <button data-cat="bebidas"
                     class="snap-start px-4 py-1 p-1 rounded-full bg-[#ebebeb] text-dark font-bold text-sm transition-transform duration-150 cursor-pointer flex-shrink-0 btn-cat">
                     Bebidas
@@ -101,8 +103,7 @@
             <div id="cat-sushi" class="categoria-conteudo">
                 <div class="text-left text-dark font-extrabold text-[22px] mt-8 mb-4">Sushis e Combinados</div>
                 <div class="grid-cols-2 gap-4">
-                    <div
-                        class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
                         <div class="absolute inset-0 z-0 cursor-pointer"
                             onclick="abrirModalDetalhes('Sushi Especial', 99.00, '10 sashimis Variados, 10 uramakis Filadélfia e 10 uramakis.','assets/images/sushi_spicy.png', 's_1')">
                         </div>
@@ -129,8 +130,7 @@
 
             <div id="cat-sushi" class="categoria-conteudo">
                 <div class="grid-cols-2 gap-4">
-                    <div
-                        class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
                         <div class="absolute inset-0 z-0 cursor-pointer"
                             onclick="abrirModalDetalhes('Sushi de Camarão', 30.00, '5 peças de sushi de camarão','assets/images/sushi_camarao.png', 's_1')">
                         </div>
@@ -158,8 +158,7 @@
             <div id="cat-temakis" class="categoria-conteudo">
                 <div class="text-left text-dark font-extrabold text-[22px] mt-8 mb-4">Temakis</div>
                 <div class="grid-cols-2 gap-4">
-                    <div
-                        class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
                         <div class="absolute inset-0 z-0 cursor-pointer"
                             onclick="abrirModalDetalhes('Temaki de Salmão', 25.00, 'Temaki de Salmão Ultra recheado','assets/images/temaki-de-salmao.jpg', 's_1')">
                         </div>
@@ -186,8 +185,7 @@
 
             <div id="cat-temakis" class="categoria-conteudo">
                 <div class="grid-cols-2 gap-4">
-                    <div
-                        class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
                         <div class="absolute inset-0 z-0 cursor-pointer"
                             onclick="abrirModalDetalhes('Temaki Frito', 45.00, 'Temaki Recheado de salmão','assets/images/temaki-frito.png', 's_1')">
                         </div>
@@ -215,8 +213,7 @@
             <div id="cat-bebidas" class="categoria-conteudo">
                 <div class="text-left text-dark font-extrabold text-[22px] mt-8 mb-4">Bebidas</div>
                 <div class="grid-cols-2 gap-4">
-                    <div
-                        class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
                         <div class="absolute inset-0 z-0 cursor-pointer"
                             onclick="abrirModalDetalhes('Coca-Cola', 9.00, 'Refrigerante Lata 350ml','assets/images/coca_cola.png', 's_1')">
                         </div>
@@ -243,8 +240,7 @@
                 
             <div id="cat-bebidas" class="categoria-conteudo">
                 <div class="grid-cols-2 gap-4">
-                    <div
-                        class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
+                    <div class="bg-white rounded-[20px] p-3 shadow-sm border border-gray-100 relative flex flex-col hover:shadow-md transition-shadow group">
                         <div class="absolute inset-0 z-0 cursor-pointer"
                             onclick="abrirModalDetalhes('Cerveja Heineken', 12.00, 'Garrafa Heineken 600Ml','assets/images/heineken.png', 's_1')">
                         </div>
@@ -289,13 +285,16 @@
         class="fixed inset-0 bg-black/70 z-[80] flex justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300 px-4">
         <div class="bg-white w-full max-w-[400px] rounded-[30px] overflow-hidden transform scale-95 transition-transform duration-300 relative flex flex-col"
             id="detalhes-modal-content">
+
             <button onclick="fecharModalDetalhes()"
                 class="absolute top-4 right-4 bg-white/80 backdrop-blur-md text-dark w-10 h-10 rounded-full flex justify-center items-center font-bold text-2xl shadow-sm z-10 hover:text-primary active:scale-90 transition-all">&times;</button>
+
             <div class="w-full h-[280px] bg-gray-50 flex justify-center items-center p-8 relative">
                 <div class="absolute inset-0 bg-gradient-to-b from-gray-100 to-white opacity-50"></div>
                 <img id="detalhes-img" src="" alt="Produto"
                     class="w-full h-full object-contain drop-shadow-xl relative z-10 transition-transform duration-500 hover:scale-105">
             </div>
+
             <div class="p-6">
                 <h2 id="detalhes-nome" class="text-3xl font-black text-dark mb-1 leading-tight tracking-tight">Nome do
                     Produto</h2>
@@ -304,6 +303,7 @@
                     <p id="detalhes-desc" class="text-gray-600 text-sm leading-relaxed font-medium">Descrição detalhada
                         do produto vai aqui...</p>
                 </div>
+
                 <button id="detalhes-btn-add"
                     class="w-full bg-gradient-to-r from-primary to-[#a82d2f] text-white py-4 rounded-xl text-[17px] font-extrabold shadow-[0_8px_20px_-6px_rgba(202,60,63,0.5)] hover:shadow-[0_8px_25px_-4px_rgba(202,60,63,0.6)] active:scale-[0.98] transition-all outline-none flex justify-center items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
@@ -409,6 +409,5 @@
             });
         });
     </script>
-
 </body>
 </html>
